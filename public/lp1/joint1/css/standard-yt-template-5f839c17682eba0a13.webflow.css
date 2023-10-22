@@ -23,11 +23,12 @@ a {
 
 .heading {
   color: #000;
+  font-family: Fira Sans Extra Condensed;
   text-align: center;
   padding-left: 6%;
   padding-right: 6%;
-  font-size: 35px;
-  line-height: 38px;
+  font-size: 45px;
+  line-height: 50px;
 }
 
 .text-span {
@@ -98,6 +99,7 @@ a {
 }
 
 .paragraph.body-paragraph {
+  font-family: Open Sans;
   text-align: left;
   letter-spacing: 0;
   line-height: 27px;
@@ -371,7 +373,7 @@ a {
 }
 
 .text-span-5 {
-  color: #d81e1e;
+  color: #0d8886;
 }
 
 .container-7 {
@@ -459,10 +461,11 @@ a {
 
 @media screen and (max-width: 479px) {
   .heading {
+    margin-top: 25px;
     padding-left: 0%;
     padding-right: 0%;
-    font-size: 25px;
-    line-height: 29px;
+    font-size: 30px;
+    line-height: 33px;
   }
 
   .container {
@@ -503,13 +506,13 @@ a {
   .button.cta1 {
     width: 90%;
     margin-top: 14px;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.2em;
   }
 
   .paragraph.body-paragraph {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 140%;
   }
 
   .container-2 {

@@ -24,7 +24,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MXT65B7');</script>
 
-<script src="https://fast.vidalytics.com/embeds/dPBvC4Wd/L0Bl0UjACUxdGVoh/player-dash-mse.min.js?hash=zunbtqi"></script>
 <script type="f429205d9f9e41191949727c-text/javascript">
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -1076,6 +1075,7 @@ console.log('initializePlayerAPI()');
 var player = getPlayer();
 if (player._player) {
 vidalyticsPlayerAPI = player;
+console.log(vidalyticsPlayerAPI);
 onPlayerAPIAvailableCallback();
 return;
 }
@@ -1086,8 +1086,7 @@ initializePlayerAPI();
 function getPlayer() {
 console.log('getPlayer()');
 var embeds = (window._vidalytics || {}).embeds || {};
-console.log(embeds[EMBED_CODE_ID]);
-
+console.log(embeds);
 if (embeds[EMBED_CODE_ID]) {
 return embeds[EMBED_CODE_ID].player || {};
 }
