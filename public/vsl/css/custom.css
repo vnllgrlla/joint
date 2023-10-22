@@ -1,0 +1,66 @@
+.headline hi {
+	text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+#player, .bitmovinplayer-poster {
+	max-height: 100vh;
+}
+/* volume button */
+@keyframes VOLUME_SMALL_WAVE_FLASH {
+      0% { opacity: 0; }
+     33% { opacity: 1; }
+     66% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  @keyframes VOLUME_LARGE_WAVE_FLASH {
+      0% { opacity: 0; }
+     33% { opacity: 1; }
+     66% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  .volume__small-wave {
+    animation: VOLUME_SMALL_WAVE_FLASH 2s infinite;
+    opacity: 0;
+  }
+
+  .volume__large-wave {
+    animation: VOLUME_LARGE_WAVE_FLASH 2s infinite .3s;
+    opacity: 0;
+  }
+/* Vidalytics Video Overlay */
+@media(min-width:500px) and (max-width:1024px) {
+	#bmpui-id-15, 
+	#bmpui-id-16 {
+		top: auto !important;
+		bottom:50%;
+	}
+}
+@media(min-width:1025px) {
+	#bmpui-id-15,
+	#bmpui-id-16 {
+		top: auto !important;
+		bottom:85%;
+	}
+}
+/* NEW TIMER */
+.purchaseCounterStart .flip-clock-wrapper ul {
+	background: #FFC800;
+}
+.purchaseCounterStart .flip-clock-wrapper ul li a div.up:after {
+	background-color: #CCA30E;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.purchaseCounterStart .flip-clock-wrapper ul li a div div.inn {
+	color: #000;
+	font-family: fira sans extra condensed,Impact,sans-serif;
+	text-shadow: 0 1px 1px rgba(0,0,0,0);
+	background-color: #FFC800;
+}
+.purchaseCounterStart .flip-clock-dot {
+	background: #CCA30E;
+}
+/* Testimonials Wrapper */
+.reviews-number {
+	display:none;
+}
